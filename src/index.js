@@ -128,11 +128,11 @@ limitations under the License.
 
   function replaceFlash () {
     var elements = doc.getElementsByTagName('object')
-    for (var i = 0; i < elements.length; ++i) {
+    for (var i = elements.length-1; i >= 0 ; --i) {
       replaceActiveX(elements[i])
     }
     elements = doc.getElementsByTagName('embed')
-    for (i = 0; i < elements.length; ++i) {
+    for (i = elements.length-1; i >= 0 ; --i) {
       replaceEmbed(elements[i])
     }
   }

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="../src/index.js"></script>
+    <style>
+    body {
+        background: #000;
+        color: #eee;
+    }
+    
+    .example {
+        border: 1px dashed #0f0;
+        display: inline-block;
+    }
+    
+    object {
+        border: 5px solid red;
+    }
+    
+    embed {
+        border: 5px solid purple;
+    }
+    </style>
+</head>
+<body>
+    <h1>Shumway Shim Test</h1>
+    <div class="example">
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=3,0,0,0" id="demo" width="800" height="512">
+            <param name="movie" value="demo.swf"> 
+            <param name="loop" value="false"> 
+            <param name="quality" value="high"> 
+            <param name="menu" value="false"> 
+            <param name="bgcolor" value="#ff0000">
+            <param name="scale" value="noscale">
+            <param name="FlashVars" value="myVariable=Hello%20World&mySecondVariable=Goodbye" /> 
+            <embed src="demo.swf" swliveconnect="false" width="800" height="512" loop="false" quality="high" menu="false" bgcolor="#ff0000" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" />
+        </object>
+    </div>
+    
+    <div class="example">
+        <embed src="demo.swf" scale="noscale" swliveconnect="false" width="500" height="512" loop="false" quality="high" menu="false" bgcolor="#ff0000" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" FlashVars="myVariable=Hello%20World&mySecondVariable=Goodbye" />
+    </div>
+</body>
+</html>

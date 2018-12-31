@@ -1,0 +1,7 @@
+{
+  "cleanUrls": false,
+  "rewrites": [
+    { "source": "/src/shumway-dist/:x/:y", "destination": "/node_modules/shumway-dist/:x/:y" },
+    { "source": "/src/shumway-dist/:x/:y/:z", "destination": "/node_modules/shumway-dist/:x/:y/:z" }
+  ]
+}

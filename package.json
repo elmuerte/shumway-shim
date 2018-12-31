@@ -4,7 +4,8 @@
   "description": "Shim to replace embedded Flash movies with a Shumway viewer.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint src",
+    "serve": "serve"
   },
   "repository": {
     "type": "git",
@@ -21,15 +22,16 @@
   },
   "homepage": "https://github.com/elmuerte/shumway-shim#readme",
   "dependencies": {
-    "serve": "^10.1.1",
     "shumway-dist": "^0.10.214"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^4.6.0",
     "eslint": "^5.11.1",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-plugin-standard": "^4.0.0",
+    "serve": "^10.1.1"
   }
 }

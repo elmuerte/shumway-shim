@@ -23,13 +23,11 @@ limitations under the License.
 
   var viewerUrl = window.SHUMWAY_VIEWER_URL || getScriptBase() + 'shumway-dist/iframe/viewer.html'
   var baseUrl = document.location.protocol + '//' + document.location.host + document.location.pathname
-  var debug = window.console || { 'log': function () {} }
 
   // can the movie be loaded via a postMessage(...)
   var canPostMessage = typeof window.postMessage === 'function'
 
   function replaceWithShumway (elm, flash) {
-    debug.log(flash)
     var viewer = doc.createElement('iframe')
     viewer.frameBorder = 0
     viewer.src = viewerUrl

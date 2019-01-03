@@ -1,0 +1,12 @@
+{
+  "name": "shumway-dist",
+  "version": "0.11.622",
+  "main": [
+    "shuobject.js"
+  ],
+  "ignore": [],
+  "keywords": [
+    "Mozilla",
+    "Shumway"
+  ]
+}

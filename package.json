@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/elmuerte/shumway-shim#readme",
   "dependencies": {
-    "shumway-dist": "^0.10.214"
+    // outdated version "shumway-dist": "^0.10.214"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.6.0",
